@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="page-header">
+		<h1>Trips</h1>
+	</div>
+
+	<ul>
+
+		<li	ng-repeat="trip in trips">
+
+			<a href="/trips/{{trip._id}}"> {{ trip.date }} : {{ trip.station }} </a>
+
+		</li>
+
+	</ul>
+	
+</div>
