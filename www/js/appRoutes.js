@@ -19,10 +19,21 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			templateUrl: '/js/modules/tanks/views/list.html',	
 		})
 
+		.when('/tanks/create', {
+			controller: 'TankFormController',
+			templateUrl: '/js/modules/tanks/views/create.html',
+		})
+
 		//Individual tank routes
 		.when('/tanks/:tankId', {
 			controller: 'TankViewController',
 			templateUrl: '/js/modules/tanks/views/view.html',
+		})
+
+		//Individual tank routes
+		.when('/tanks/:tankId', {
+			controller: 'TankFormController',
+			templateUrl: '/js/modules/tanks/views/update.html',
 		});
 
 	//Use HTML5 URLs instead of hash prefixes

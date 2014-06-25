@@ -5,12 +5,13 @@
  * @module ui.bootstrap Angular integration for Twitter Bootstrap
  * @module ngRoute      Angular module for routing
  * @module appRoutes    Application routing config
- * @module tankApp      Module for Trip CRUD
+ * @module tankApp      Module for Tank CRUD
  */
 var app = angular.module('unleadedApp', 
 	[
 		'ngRoute',
 		'appRoutes',
+		'ui.bootstrap',
 		'tankApp',
 	] 
 );

@@ -16,4 +16,4 @@ var TankSchema   = new Schema({
 	comment: String
 });
 
-module.exports = mongoose.model('Tank', TripSchema);
+module.exports = mongoose.model('Tank', TankSchema);

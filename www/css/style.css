@@ -1,1 +1,9 @@
 body { padding-top:30px; }
+
+.header-btn { margin-top: 20px; }
+
+.input-group-btn>.btn[disabled] { opacity: 100; }
+
+.number-input { width: 75px; }
+
+.input-group>.number-input { width: 75px;}

@@ -30,7 +30,7 @@ then
 	# Install node and bower dependencies
 	cd /var/www/$1
 	npm install
-	bower install
+	bower install --allow-root
 
 	echo "Install finished! Node server is listening on http://10.0.01.100:8080/"
 

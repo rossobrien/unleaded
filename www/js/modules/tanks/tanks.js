@@ -5,4 +5,4 @@
  *
  * @module tankService Service object for API interactions
  */
-angular.module('tankApp', ['TankService']);
+angular.module('tankApp', ['TankService', 'ui.bootstrap']);
