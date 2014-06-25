@@ -13,16 +13,16 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			templateUrl: 'views/home.html',
 		})
 
-		//Trips list routes
-		.when('/trips', {
-			controller: 'TripListController',
-			templateUrl: '/js/modules/trips/views/list.html',	
+		//Tanks list routes
+		.when('/tanks', {
+			controller: 'TankListController',
+			templateUrl: '/js/modules/tanks/views/list.html',	
 		})
 
-		//Individual trip routes
-		.when('/trips/:tripId', {
-			controller: 'TripViewController',
-			templateUrl: '/js/modules/trips/views/view.html',
+		//Individual tank routes
+		.when('/tanks/:tankId', {
+			controller: 'TankViewController',
+			templateUrl: '/js/modules/tanks/views/view.html',
 		});
 
 	//Use HTML5 URLs instead of hash prefixes

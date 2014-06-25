@@ -1,17 +1,17 @@
 module.exports = function(router) {
 	
 	//Import models
-	var Trip = require('./models/trip');
+	var Tank = require('./models/tank');
 
 	router.get('/', function(req, res) {
 		res.json({ message: 'Welcome to the Unleaded.io API' });	
 	});
 
-	//Trips group routes
-	router.route('/trips')
+	//Tanks group routes
+	router.route('/tanks')
 		
 		/**
-		 * Create Trip
+		 * Create Tank
 		 * 
 		 * @param  req POST request
 		 * @param  res Result to send back to the browser
@@ -20,64 +20,64 @@ module.exports = function(router) {
 		 */
 		.post(function(req, res) {
 			
-			//Create trip and load data from request
-			var trip = new Trip();
-			trip.date    = req.body.date;
-			trip.station = req.body.station;
-			trip.cost    = req.body.cost;
-			trip.gallons = req.body.gallons;
-			trip.mileage = req.body.mileage;
-			trip.comment = req.body.comment;
+			//Create tank and load data from request
+			var tank = new Tank();
+			tank.date    = req.body.date;
+			tank.station = req.body.station;
+			tank.cost    = req.body.cost;
+			tank.gallons = req.body.gallons;
+			tank.mileage = req.body.mileage;
+			tank.comment = req.body.comment;
 
-			//Save trip
-			trip.save(function(err) {
+			//Save tank
+			tank.save(function(err) {
 				if (err)
 					res.send(err);
 
-				res.json({ message: 'Trip created!' });
+				res.json({ message: 'Tank created!' });
 			});
 			
 		})
 
 		/**
-		 * Get all trips
+		 * Get all tanks
 		 * 
 		 * @param  req Request object
 		 * @param  res Result object to send back to the browser
 		 * 
-		 * @return Trips[] All trips
+		 * @return Tanks[] All tanks
 		 */
 		.get(function(req, res) {
-			Trip.find(function(err, trips) {
+			Tank.find(function(err, tanks) {
 				if (err)
 					res.send(err);
 
-				res.json(trips);
+				res.json(tanks);
 			});
 		});
 
-	//Individual trip routes
-	router.route('/trips/:trip_id')
+	//Individual tank routes
+	router.route('/tanks/:tank_id')
 
 		/**
-		 * Get an indivdual trip
+		 * Get an indivdual tank
 		 * 
 		 * @param  req Request object
 		 * @param  res Result object to send back to the browser
 		 * 
-		 * @return Trip Single trip object
+		 * @return Tank Single tank object
 		 */
 		.get(function(req, res) {
-			Trip.findById(req.params.trip_id, function(err, trip) {
+			Tank.findById(req.params.tank_id, function(err, tank) {
 				if (err)
 					res.send(err);
 
-				res.json(trip);
+				res.json(tank);
 			});
 		})
 
 		/**
-		 * Update an indivdual trip
+		 * Update an indivdual tank
 		 * 
 		 * @param  req POST request object
 		 * @param  res Result object to send back to the browser
@@ -86,33 +86,33 @@ module.exports = function(router) {
 		 */
 		.put(function(req, res) {
 
-			//Load trip object
-			Trip.findById(req.params.trip_id, function(err, trip) {
+			//Load tank object
+			Tank.findById(req.params.tank_id, function(err, tank) {
 
 				if (err)
 					res.send(err);
 
 				//Update fields
-				trip.date    = req.body.date;
-				trip.station = req.body.station;
-				trip.cost    = req.body.cost;
-				trip.gallons = req.body.gallons;
-				trip.mileage = req.body.mileage;
-				trip.comment = req.body.comment;
+				tank.date    = req.body.date;
+				tank.station = req.body.station;
+				tank.cost    = req.body.cost;
+				tank.gallons = req.body.gallons;
+				tank.mileage = req.body.mileage;
+				tank.comment = req.body.comment;
 
-				//Save trip
-				trip.save(function(err) {
+				//Save tank
+				tank.save(function(err) {
 					if (err)
 						res.send(err);
 
-					res.json({ message: 'Trip updated!' });
+					res.json({ message: 'Tank updated!' });
 				});
 
 			});
 		})
 
 		/**
-		 * Delete an indivdual trip
+		 * Delete an indivdual tank
 		 * 
 		 * @param  req Request object
 		 * @param  res Result object to send back to the browser
@@ -120,13 +120,13 @@ module.exports = function(router) {
 		 * @return JSON message
 		 */
 		.delete(function(req, res) {
-			Trip.remove({
-				_id: req.params.trip_id
-			}, function(err, trip) {
+			Tank.remove({
+				_id: req.params.tank_id
+			}, function(err, tank) {
 				if (err)
 					res.send(err);
 
-				res.json({ message: 'Trip deleted!' });
+				res.json({ message: 'Tank deleted!' });
 			});
 		});
 };

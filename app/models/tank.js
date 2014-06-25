@@ -1,13 +1,13 @@
 /**
- * Trip Model
+ * Tank Model
  *
- * Model file for Trip objects
+ * Model file for Tank objects
  */
 var mongoose     = require('mongoose');
 var Schema       = mongoose.Schema;
 
-//Data structure for Trips
-var TripSchema   = new Schema({
+//Data structure for Tanks
+var TankSchema   = new Schema({
 	date: Date,
 	station: String,
 	cost: Number,
@@ -16,4 +16,4 @@ var TripSchema   = new Schema({
 	comment: String
 });
 
-module.exports = mongoose.model('Trip', TripSchema);
+module.exports = mongoose.model('Tank', TripSchema);
