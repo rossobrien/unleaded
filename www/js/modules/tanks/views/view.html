@@ -1,6 +1,20 @@
 <div class="">
 	<div class="page-header">
-		<h1>{{tank.date}}</h1>
+		<h1 class="pull-left">
+			Fill up on {{tank.date}}
+		</h1>
+
+		<div class="pull-right">
+			<a href="/tanks/{{tank._id}}/update" class="btn btn-warning header-btn">
+				Edit
+			</a>
+
+			<a ng-click="deleteTank()" class="btn btn-danger header-btn">
+				Delete
+			</a>
+		</div>
+
+		<div class="clearfix"></div>
 	</div>
 	<ul>
 		<li>{{tank.station}}</li>

@@ -12,8 +12,8 @@ angular.module('tankApp').controller('TankFormController', function($scope, $rou
 	}
 
 	$scope.saveTank = function() {
-        Tanks.save($scope.tank);
-    }
+		Tanks.save($scope.tank);
+	}
 
 	$scope.today = function() {
 		$scope.dt = new Date();

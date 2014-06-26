@@ -9,4 +9,8 @@ angular.module('tankApp').controller('TankViewController', function($scope, $rou
 
 	//get tank items
 	$scope.tank = Tanks.get({id: $routeParams.tankId});
+
+	$scope.deleteTank = function() {
+		Tanks.delete({id: $routeParams.tankId});
+	}
 });

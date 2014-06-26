@@ -31,7 +31,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		})
 
 		//Individual tank routes
-		.when('/tanks/:tankId', {
+		.when('/tanks/:tankId/update', {
 			controller: 'TankFormController',
 			templateUrl: '/js/modules/tanks/views/update.html',
 		});
