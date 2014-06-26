@@ -6,7 +6,7 @@
  */
 angular.module('tankApp').controller('TankFormController', function($scope, $routeParams, Tanks) {
 
-	if ($routeParams.tankId != '')
+	if ($routeParams.tankId)
 	{
 		$scope.tank = Tanks.get({id: $routeParams.tankId});
 	}
