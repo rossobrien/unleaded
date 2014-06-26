@@ -9,7 +9,7 @@
 				id="date" 
 				class="form-control" 
 				datepicker-popup="{{format}}" 
-				ng-model="dt" 
+				ng-model="tank.date" 
 				is-open="opened" 
 				max-date="{{initDate}}" 
 				datepicker-options="dateOptions" 
@@ -25,7 +25,7 @@
 
 	<div class="form-group">
 		<label for="station">Station Name & Location</label>
-		<input type="text" class="form-control" id="station">
+		<input type="text" class="form-control" id="station" ng-model="tank.station">
 	</div>
 
 		<div class="form-group">
@@ -34,20 +34,20 @@
 			<span class="input-group-btn">
 				<span class="btn btn-default" disabled="disabled"><i class="glyphicon glyphicon-usd"></i></span>
 			</span>
-			<input type="text" class="form-control number-input" id="cost">
+			<input type="text" class="form-control number-input" id="cost" ng-model="tank.cost">
 		</div>
 	</div>
 
 		<div class="form-group">
 		<label for="gallons">Gallons</label>
-		<input type="text" class="form-control number-input" id="gallons">
+		<input type="text" class="form-control number-input" id="gallons" ng-model="tank.gallons">
 	</div>
 
 	<div class="form-group">
 		<label for="comment">Comments</label>
-		<textarea class="form-control" id="comment" rows="3"></textarea>
+		<textarea class="form-control" id="comment" rows="3" ng-model="tank.comment"></textarea>
 	</div>
 	
 	
-	<button type="submit" class="btn btn-default">Submit</button>
+	<button type="submit" class="btn btn-default" ng-click="saveTank()">Submit</button>
 </form>
