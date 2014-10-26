@@ -3,8 +3,8 @@
  *
  * Model file for Tank objects
  */
-var mongoose     = require('mongoose');
-var Schema       = mongoose.Schema;
+var mongoose = require('mongoose');
+var Schema   = mongoose.Schema;
 
 //Data structure for Tanks
 var TankSchema   = new Schema({
@@ -13,7 +13,8 @@ var TankSchema   = new Schema({
 	cost: Number,
 	gallons: Number,
 	mileage: Number,
-	comment: String
+	comment: String,
+	mpg: Number
 });
 
 module.exports = mongoose.model('Tank', TankSchema);

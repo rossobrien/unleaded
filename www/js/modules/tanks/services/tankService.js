@@ -15,7 +15,5 @@ tankService.factory('Tanks', function($resource) {
 	/**
 	 * Define code API wrapper
 	 */
-	return $resource('/api/tanks/:id',
-		{id: '@id'}
-	);
+	return $resource('/api/tanks/:id');
 });

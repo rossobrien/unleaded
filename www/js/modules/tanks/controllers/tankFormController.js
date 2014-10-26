@@ -4,15 +4,21 @@
  * @param  $scope    Data to pass to view
  * @param  Tanks Tank object for interacting with API
  */
-angular.module('tankApp').controller('TankFormController', function($scope, $routeParams, Tanks) {
+angular.module('tankApp').controller('TankFormController', function($scope, $routeParams, $location, Tanks) {
 
 	if ($routeParams.tankId)
 	{
 		$scope.tank = Tanks.get({id: $routeParams.tankId});
 	}
+	else
+	{
+		$scope.tank = new Tanks();
+	}
 
 	$scope.saveTank = function() {
-		Tanks.save($scope.tank);
+		Tanks.save($scope.tank, function() {
+			 $location.path('/tanks');
+		});
 	}
 
 	$scope.today = function() {

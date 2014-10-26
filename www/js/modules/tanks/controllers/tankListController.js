@@ -8,5 +8,4 @@ angular.module('tankApp').controller('TankListController', function($scope, Tank
 
 	//get code items from API
 	$scope.tanks = Tanks.query();
-
 });
