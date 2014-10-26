@@ -1,4 +1,16 @@
-body { padding-top:30px; }
+body {
+	padding-top: 125px;
+	padding-bottom: 20px;
+}
+
+.navbar-fixed-top {
+	background-color: rgba(0,0,0,.5);
+	border-bottom: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.navbar-inverse .navbar-brand { font-size: 36px; color: #FFF; padding-left: 0px; }
 
 .header-btn { margin-top: 20px; }
 
@@ -7,3 +19,10 @@ body { padding-top:30px; }
 .number-input { width: 75px; }
 
 .input-group>.number-input { width: 75px;}
+
+.container-wide {	
+	padding-left: 80px;
+	padding-right: 80px; 
+}
+
+.jumbotron.main { padding: 100px 0px 50px 0px; margin-top:-75px; }
