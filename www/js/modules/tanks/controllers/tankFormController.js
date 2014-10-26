@@ -16,8 +16,9 @@ angular.module('tankApp').controller('TankFormController', function($scope, $rou
 	}
 
 	$scope.saveTank = function() {
+		$scope.tank.mpg = 0;
 		Tanks.save($scope.tank, function() {
-			 $location.path('/tanks');
+			$location.path('/tanks');
 		});
 	}
 

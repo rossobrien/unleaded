@@ -1,7 +1,7 @@
-<div class="">
+<div class="container">
 	<div class="page-header">
 		<h1 class="pull-left">
-			Fill up on {{tank.date}}
+			Fill up on {{tank.date | date:dateFormat}}
 		</h1>
 
 		<div class="pull-right">
@@ -16,12 +16,24 @@
 
 		<div class="clearfix"></div>
 	</div>
-	<ul>
-		<li>{{tank.station}}</li>
-		<li>{{tank.cost}}</li>
-		<li>{{tank.gallons}}</li>
-		<li>{{tank.mileage}}</li>
-		<li>{{tank.comment}}</li>	
+	<div class="row">
+		<label>Station: </label> <span>{{tank.station}}</span>
+	</div>
+	<div class="row">
+		<label>Cost: </label> <span>${{tank.cost}}</span>
+	</div>
+	<div class="row">
+		<label>Gallons: </label> <span>{{tank.gallons}}</span>
+	</div>
+	<div class="row">
+		<label>Mileage: </label> <span>{{tank.mileage}}</span>
+	</div>
+	<div class="row">
+		<label>MPG: </label> <span>{{tank.mpg | number:2}}</span>
+	</div>
+	<div class="row">
+		<label>Comments: </label> <span>{{tank.comment}}</span>
+	</div>
 	</ul>
 	<br>
 </div>

@@ -35,6 +35,6 @@ then
 	echo "Install finished! Node server is listening on http://10.0.01.100:8080/"
 
 	# Run it
-	node /var/www/$1/server.js
+	sudo sh start
 
 fi

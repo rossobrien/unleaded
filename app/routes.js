@@ -100,6 +100,7 @@ module.exports = function(router) {
 				tank.gallons = req.body.gallons;
 				tank.mileage = req.body.mileage;
 				tank.comment = req.body.comment;
+				tank.mpg     = tank.mileage / tank.gallons;
 
 				//Save tank
 				tank.save(function(err) {

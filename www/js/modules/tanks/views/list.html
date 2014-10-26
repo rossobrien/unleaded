@@ -1,4 +1,4 @@
-<div class="">
+<div class="container">
 	<ol class="breadcrumb">
 		<li><a href="/">Home</a></li>
 		<li class="active">Tanks</li>
@@ -20,7 +20,7 @@
 
 		<li	ng-repeat="tank in tanks">
 
-			<a href="/tanks/{{tank._id}}"> {{ tank.date }} : {{ tank.station }} </a>
+			<a href="/tanks/{{tank._id}}"> {{ tank.date | date:dateFormat }} : {{ tank.station }} </a>
 
 		</li>
 
