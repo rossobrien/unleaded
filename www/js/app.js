@@ -12,6 +12,7 @@ var app = angular.module('unleadedApp',
 		'ngRoute',
 		'appRoutes',
 		'ui.bootstrap',
+		'ngTable',
 		'tankApp',
 	] 
 );
@@ -23,6 +24,6 @@ var app = angular.module('unleadedApp',
  */
 app.controller('unleadedController', function($scope) {
 
-	$scope.tagline = 'Keep track of your gas usage';	
+	$scope.tagline = 'Track your gas usage';	
 
 });

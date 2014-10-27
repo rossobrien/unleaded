@@ -8,6 +8,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/ng-table/ng-table.css">
 	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
 
 	<!-- JS -->
@@ -16,6 +17,7 @@
 	<script src="libs/angular-resource/angular-resource.js"></script>
 	<script src="libs/angular-bootstrap/ui-bootstrap.min.js"></script>
 	<script src="libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="libs/ng-table/ng-table.js"></script>
 	<script src="js/modules/saveResource.js"></script>
 
 	<!-- ANGULAR CUSTOM -->
@@ -48,12 +50,11 @@
 					<div class="form-group">
 						<input type="password" placeholder="Password" class="form-control">
 					</div>
-					<button type="submit" class="btn btn-success">Sign in</button>
+					<button type="submit" class="btn btn-primary">Sign in</button>
 				</form>
 			</div><!--/.navbar-collapse -->
 		</div>
 	</div>
-
 
 	<!-- ANGULAR DYNAMIC CONTENT -->
 	<div ng-view></div>

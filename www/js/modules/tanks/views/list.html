@@ -1,28 +1,65 @@
-<div class="jumbotron main">
+<div class="jumbotron main road1">
 	<div class="container-wide">
 		<h1>{{ tagline }}</h1>
+
+		<a href="/tanks/create" class="btn btn-success btn-lg">
+			Add Tank
+		</a>
+	</div>
 	</div>
 </div>
 
 <div class="container">
 
-	<div class="page-header">
+	<table ng-table="tableParams" template-pagination="custom/pager" show-filter="true" class="table">
+		<tr ng-repeat="tank in $data">
+			<a href="/tanks/{{tank._id}}">
+				<td data-title="'Date'" sortable="'date'" filter="{ 'date': 'text' }">
+					 {{ tank.date | date:dateFormat }}
+				</td>
+				<td data-title="'Station'" sortable="'station'" filter="{ 'station': 'text' }">
+					{{ tank.station }}
+				</td>
+				<td data-title="'Cost'" sortable="'cost'" filter="{ 'cost': 'text' }">
+					${{ tank.cost | number:2 }}
+				</td>
+				<td data-title="'Gallons'" sortable="'gallons'" filter="{ 'gallons': 'text' }">
+					{{ tank.gallons | number:2 }}
+				</td>
+				<td data-title="'Mileage'" sortable="'mileage'" filter="{ 'mileage': 'text' }">
+					{{ tank.mileage | number:1 }}
+				</td>
+				<td data-title="'MPG'" sortable="'mpg'" filter="{ 'mpg': 'text' }">
+					{{ tank.mpg | number:2 }}
+				</td>
+			</a>
+		</tr>
+	</table>
+	<script type="text/ng-template" id="custom/pager">
+		<ul class="pager ng-cloak">
+			<li ng-repeat="page in pages"
+				ng-class="{'disabled': !page.active, 'previous': page.type == 'prev', 'next': page.type == 'next'}"
+				ng-show="page.type == 'prev' || page.type == 'next'" ng-switch="page.type">
+				<a ng-switch-when="prev" ng-click="params.page(page.number)" href="">&laquo; Previous</a>
+				<a ng-switch-when="next" ng-click="params.page(page.number)" href="">Next &raquo;</a>
+			</li>
+			<li> 
+				<div class="btn-group">
+					<button type="button" ng-class="{'active':params.count() == 10}" ng-click="params.count(10)" class="btn btn-default">
+						10
+					</button>
+					<button type="button" ng-class="{'active':params.count() == 25}" ng-click="params.count(25)" class="btn btn-default">
+						25
+					</button>
+					<button type="button" ng-class="{'active':params.count() == 50}" ng-click="params.count(50)" class="btn btn-default">
+						50
+					</button>
+					<button type="button" ng-class="{'active':params.count() == 100}" ng-click="params.count(100)" class="btn btn-default">
+						100
+					</button>
+				</div>
+			</li>
+		</ul>
+	</script>
 
-		<a href="/tanks/create" class="btn btn-primary header-btn pull-right">
-			Add Tank
-		</a>
-
-		<div class="clearfix"></div>
-	</div>
-
-	<ul>
-
-		<li	ng-repeat="tank in tanks">
-
-			<a href="/tanks/{{tank._id}}"> {{ tank.date | date:dateFormat }} : {{ tank.station }} </a>
-
-		</li>
-
-	</ul>
-	
 </div>
