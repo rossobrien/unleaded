@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-fixed-top {
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.75);
 	border-bottom: 0px;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -25,4 +25,41 @@ body {
 	padding-right: 80px; 
 }
 
-.jumbotron.main { padding: 100px 0px 50px 0px; margin-top:-75px; }
+.jumbotron.main { 
+	padding: 100px 0px 50px 0px; 
+	margin-top:-125px; 
+	min-height: 300px;
+	color: #FFF;
+}
+
+.road1 {
+	background-image: url("/images/road1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 30%;
+}
+ .road2 {
+ 	background-image: url("/images/road2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 45%;
+ }
+
+ .road3 {
+ 	background-image: url("/images/road3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 15%;
+ }
+
+ .road4 {
+ 	background-image: url("/images/road4.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 35%;
+ }
+
+.jumbotron.main h1 {
+	font-size: 50px;
+	padding-top: 15px;
+}

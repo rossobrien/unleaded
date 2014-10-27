@@ -1,8 +1,14 @@
+<div class="jumbotron main">
+	<div class="container-wide">
+		<h1>
+			View Fill Up</h1>
+	</div>
+</div>
+
 <div class="container">
+	<a href="tanks"><< Back</a>
 	<div class="page-header">
-		<h1 class="pull-left">
-			Fill up on {{tank.date | date:dateFormat}}
-		</h1>
+		<h1 class="pull-left">{{tank.date | date:dateFormat}}</h1>
 
 		<div class="pull-right">
 			<a href="/tanks/{{tank._id}}/update" class="btn btn-warning header-btn">
