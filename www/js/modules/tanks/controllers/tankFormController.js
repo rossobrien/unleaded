@@ -45,5 +45,5 @@ angular.module('tankApp').controller('TankFormController', function($scope, $rou
 	};
 
 	$scope.initDate = new Date();
-	$scope.format = 'MMMM dd, yyyy';
+	$scope.format = 'MMMM dd, yyyy H:mm';
 });
