@@ -12,6 +12,6 @@
 		"ng-table": "latest",
 		"d3": "latest",
 		"nvd3": "latest",
-		"angularjs-nvd3-directives"
+		"angularjs-nvd3-directives": "latest"
 	}
 }
