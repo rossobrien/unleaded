@@ -1,0 +1,452 @@
+[
+  {
+    "date":"1/19/2014 13:41:00",
+    "station":"Kirkland  70th St ARCO",
+    "cost":"$40.34",
+    "gallons":11.867,
+    "mileage":295.5,
+    "mpg":24.90,
+    "comment":""
+  },
+  {
+    "date":"1/27/2014 17:47:00",
+    "station":"Yarrow Bay 76",
+    "cost":"$48.00",
+    "gallons":13.717,
+    "mileage":369.7,
+    "mpg":26.95,
+    "comment":""
+  },
+  {
+    "date":"1/30/2014 8:55:00",
+    "station":"Ellensburg Loves",
+    "cost":"$23.01",
+    "gallons":7.061,
+    "mileage":183.4,
+    "mpg":25.97,
+    "comment":"To SLC"
+  },
+  {
+    "date":"1/30/2014 12:19:00",
+    "station":"La Grande Shell",
+    "cost":"$28.84",
+    "gallons":8.742,
+    "mileage":238.8,
+    "mpg":27.32,
+    "comment":"To SLC"
+  },
+  {
+    "date":"1/30/2014 17:56:00",
+    "station":"Jerome Flying J",
+    "cost":"$32.17",
+    "gallons":10.121,
+    "mileage":292.0,
+    "mpg":28.85,
+    "comment":"To SLC"
+  },
+  {
+    "date":"1/31/2014 8:43:00",
+    "station":"Cottonwood Canyon 7-11",
+    "cost":"$28.70",
+    "gallons":9.085,
+    "mileage":251.7,
+    "mpg":27.71,
+    "comment":"SLC"
+  },
+  {
+    "date":"2/4/2014 5:26:00",
+    "station":"Ogden Exxon",
+    "cost":"$29.32",
+    "gallons":9.556,
+    "mileage":248.2,
+    "mpg":25.97,
+    "comment":"From SLC"
+  },
+  {
+    "date":"2/4/2014 10:06:00",
+    "station":"Jerome Flying J",
+    "cost":"$31.51",
+    "gallons":9.913,
+    "mileage":268.0,
+    "mpg":27.04,
+    "comment":"From SLC"
+  },
+  {
+    "date":"2/4/2014 13:34:00",
+    "station":"La Grande Shell",
+    "cost":"$37.80",
+    "gallons":11.458,
+    "mileage":292.7,
+    "mpg":25.55,
+    "comment":"From SLC"
+  },
+  {
+    "date":"2/4/2014 16:58:00",
+    "station":"Ellensburg Loves",
+    "cost":"$29.69",
+    "gallons":9.165,
+    "mileage":237.3,
+    "mpg":25.89,
+    "comment":"From SLC"
+  },
+  {
+    "date":"2/11/2014 21:08:00",
+    "station":"Yarrow Bay 76",
+    "cost":"$33.67",
+    "gallons":9.733,
+    "mileage":259.9,
+    "mpg":26.70,
+    "comment":""
+  },
+  {
+    "date":"2/18/2014 7:20:00",
+    "station":"Kirkland Shell",
+    "cost":"$31.57",
+    "gallons":9.288,
+    "mileage":253.6,
+    "mpg":27.30,
+    "comment":""
+  },
+  {
+    "date":"2/21/2014 18:05:00",
+    "station":"Bellingham Costco",
+    "cost":"$29.80",
+    "gallons":9.285,
+    "mileage":258.6,
+    "mpg":27.85,
+    "comment":"Mt Baker"
+  },
+  {
+    "date":"2/25/2014 18:32:00",
+    "station":"Kirkland  70th St ARCO",
+    "cost":"$32.65",
+    "gallons":10.018,
+    "mileage":264.3,
+    "mpg":26.38,
+    "comment":""
+  },
+  {
+    "date":"3/1/2014 13:04:00",
+    "station":"Bellingham ARCO",
+    "cost":"$30.91",
+    "gallons":9.369,
+    "mileage":253.1,
+    "mpg":27.01,
+    "comment":"Vancouver"
+  },
+  {
+    "date":"3/11/2014 19:32:00",
+    "station":"Lynnwood ARCO",
+    "cost":"$38.43",
+    "gallons":11.306,
+    "mileage":290.0,
+    "mpg":25.65,
+    "comment":""
+  },
+  {
+    "date":"3/26/2014 20:51:12",
+    "station":"Yarrow Bay 76",
+    "cost":"$55.00",
+    "gallons":14.478,
+    "mileage":371.5,
+    "mpg":25.66,
+    "comment":""
+  },
+  {
+    "date":"4/13/2014 13:48:00",
+    "station":"Kirkland 70th St ARCO",
+    "cost":"$49.04",
+    "gallons":13.403,
+    "mileage":360.2,
+    "mpg":26.87,
+    "comment":""
+  },
+  {
+    "date":"4/27/2014",
+    "station":"Sand Point 7-Eleven",
+    "cost":"$15.04",
+    "gallons":3.706,
+    "mileage":98.5,
+    "mpg":26.58,
+    "comment":""
+  },
+  {
+    "date":"5/3/2014 18:02:00",
+    "station":"Kirkland 70th St ARCO",
+    "cost":"$50.43",
+    "gallons":13.275,
+    "mileage":352.8,
+    "mpg":26.58,
+    "comment":""
+  },
+  {
+    "date":"5/19/2014 16:00:00",
+    "station":"Kirkland 70th St ARCO",
+    "cost":"$53.06",
+    "gallons":13.968,
+    "mileage":366.3,
+    "mpg":26.22,
+    "comment":""
+  },
+  {
+    "date":"5/22/2014 8:28:00",
+    "station":"Krikland 124th Ave ARCO",
+    "cost":"$13.03",
+    "gallons":3.523,
+    "mileage":90.0,
+    "mpg":25.55,
+    "comment":"to Minnesota"
+  },
+  {
+    "date":"5/22/2014 13:58:00",
+    "station":"Coeu d' Alene Tesoro",
+    "cost":"$36.56",
+    "gallons":10.632,
+    "mileage":322.6,
+    "mpg":30.34,
+    "comment":"to Minnesota"
+  },
+  {
+    "date":"5/22/2014 18:59:00",
+    "station":"Butte Town Pump",
+    "cost":"$32.66",
+    "gallons":9.666,
+    "mileage":281.1,
+    "mpg":29.08,
+    "comment":"to Minnesota"
+  },
+  {
+    "date":"5/23/2014 6:52:00",
+    "station":"Hardin Town Pump",
+    "cost":"$33.11",
+    "gallons":9.829,
+    "mileage":280.0,
+    "mpg":28.49,
+    "comment":"to Minnesota"
+  },
+  {
+    "date":"5/23/2014 10:53:00",
+    "station":"Rapid City Pilot",
+    "cost":"$34.21",
+    "gallons":10.064,
+    "mileage":277.0,
+    "mpg":27.52,
+    "comment":"to Minnesota"
+  },
+  {
+    "date":"5/23/2014 16:01:00",
+    "station":"Mitchell Holiday",
+    "cost":"$37.69",
+    "gallons":10.590,
+    "mileage":281.5,
+    "mpg":26.58,
+    "comment":"to Minnesota"
+  },
+  {
+    "date":"5/24/2014 12:27:00",
+    "station":"Rochester Fleet Farm",
+    "cost":"$42.43",
+    "gallons":12.193,
+    "mileage":335.3,
+    "mpg":27.50,
+    "comment":"to Minnesota"
+  },
+  {
+    "date":"5/27/2014 11:21:00",
+    "station":"Edgerton BP",
+    "cost":"$27.25",
+    "gallons":7.658,
+    "mileage":250.4,
+    "mpg":32.70,
+    "comment":"MN to CHI"
+  },
+  {
+    "date":"5/30/2014 17:12:00",
+    "station":"Beloit Shell",
+    "cost":"$25.60",
+    "gallons":7.174,
+    "mileage":231.1,
+    "mpg":32.21,
+    "comment":"CHI to MN"
+  },
+  {
+    "date":"5/31/2014 12:04:53",
+    "station":"Rochester Marion Rd Kwik Trip",
+    "cost":"$29.74",
+    "gallons":8.427,
+    "mileage":261.9,
+    "mpg":31.08,
+    "comment":"CHI to MN"
+  },
+  {
+    "date":"6/1/2014 7:18:00",
+    "station":"Clearwater Holiday",
+    "cost":"$24.88",
+    "gallons":6.990,
+    "mileage":198.6,
+    "mpg":28.41,
+    "comment":"from Minnesota"
+  },
+  {
+    "date":"6/1/2014 11:38:00",
+    "station":"Jamestown Tesoro",
+    "cost":"$36.37",
+    "gallons":10.105,
+    "mileage":278.7,
+    "mpg":27.58,
+    "comment":"from Minnesota"
+  },
+  {
+    "date":"6/1/2014 14:11:00",
+    "station":"Beach Flying J",
+    "cost":"$39.23",
+    "gallons":11.023,
+    "mileage":260.3,
+    "mpg":23.61,
+    "comment":"from Minnesota"
+  },
+  {
+    "date":"6/1/2014 17:39:05",
+    "station":"Billings Exxon",
+    "cost":"$34.98",
+    "gallons":10.476,
+    "mileage":256.4,
+    "mpg":24.47,
+    "comment":"from Minnesota"
+  },
+  {
+    "date":"6/2/2014 8:44:00",
+    "station":"Butte Town Pump",
+    "cost":"$33.98",
+    "gallons":10.055,
+    "mileage":267.7,
+    "mpg":26.62,
+    "comment":"from Minnesota"
+  },
+  {
+    "date":"6/2/2014 12:20:00",
+    "station":"Post Falls Flying J",
+    "cost":"$34.82",
+    "gallons":9.783,
+    "mileage":295.0,
+    "mpg":30.15,
+    "comment":"from Minnesota"
+  },
+  {
+    "date":"6/3/2014 23:15:00",
+    "station":"Lynnwood ARCO",
+    "cost":"$45.70",
+    "gallons":12.093,
+    "mileage":341.5,
+    "mpg":28.24,
+    "comment":"from Minnesota"
+  },
+  {
+    "date":"6/14/2014 18:29:00",
+    "station":"Renton Safeway",
+    "cost":"$52.90",
+    "gallons":13.778,
+    "mileage":378.4,
+    "mpg":27.46,
+    "comment":""
+  },
+  {
+    "date":"6/27/2014 12:58:00",
+    "station":"Kirkland 70th St ARCO",
+    "cost":"$45.26",
+    "gallons":11.490,
+    "mileage":313.8,
+    "mpg":27.31,
+    "comment":""
+  },
+  {
+    "date":"6/27/2014 21:07:27",
+    "station":"Troutdale Safeway",
+    "cost":"$28.53",
+    "gallons":7.510,
+    "mileage":205.9,
+    "mpg":27.42,
+    "comment":"Log Jam"
+  },
+  {
+    "date":"6/29/2014 17:27:57",
+    "station":"Troutdale Safeway",
+    "cost":"$20.93",
+    "gallons":5.510,
+    "mileage":144.5,
+    "mpg":26.23,
+    "comment":"Log Jam"
+  },
+  {
+    "date":"6/29/2014 22:07:00",
+    "station":"Bellevue NE 8th St ARCO",
+    "cost":"$28.05",
+    "gallons":7.014,
+    "mileage":204.8,
+    "mpg":29.20,
+    "comment":"Log Jam"
+  },
+  {
+    "date":"7/12/2014 15:43:00",
+    "station":"Bothell ARCO",
+    "cost":"$53.38",
+    "gallons":13.905,
+    "mileage":337.7,
+    "mpg":24.29,
+    "comment":""
+  },
+  {
+    "date":"8/11/2014 15:11:00",
+    "station":"Kirkland 70th St ARCO",
+    "cost":"$54.09",
+    "gallons":14.237,
+    "mileage":398.0,
+    "mpg":27.96,
+    "comment":""
+  },
+  {
+    "date":"8/21/2014 19:12:00",
+    "station":"Kirkland 70th St ARCO",
+    "cost":"$52.58",
+    "gallons":13.625,
+    "mileage":361.8,
+    "mpg":26.55,
+    "comment":""
+  },
+  {
+    "date":"9/17/2014 17:14:00",
+    "station":"Seattle 85th St ARCO",
+    "cost":"$46.48",
+    "gallons":12.772,
+    "mileage":346.4,
+    "mpg":27.12,
+    "comment":"Hood River/Regionals"
+  },
+  {
+    "date":"9/19/2014 17:03:00",
+    "station":"Sandy ARCO",
+    "cost":"$40.00",
+    "gallons":11.631,
+    "mileage":341.8,
+    "mpg":29.39,
+    "comment":"Hood River/Regionals"
+  },
+  {
+    "date":"9/21/2014 19:25:12",
+    "station":"Borst Park Texaco",
+    "cost":"$35.71",
+    "gallons":9.550,
+    "mileage":293.2,
+    "mpg":30.70,
+    "comment":"Hood River/Regionals"
+  },
+  {
+    "date":"10/13/2014 23:46:00",
+    "station":"Lynnwood ARCO",
+    "cost":"$43.46",
+    "gallons":13.584,
+    "mileage":377.6,
+    "mpg":27.80,
+    "comment":""
+  }
+]
