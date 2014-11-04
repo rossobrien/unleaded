@@ -13,7 +13,9 @@ var app = angular.module('unleadedApp',
 		'appRoutes',
 		'ui.bootstrap',
 		'ngTable',
+		'nvd3ChartDirectives',
 		'tankApp',
+		'trendsApp'
 	] 
 );
 

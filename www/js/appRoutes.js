@@ -34,7 +34,14 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		.when('/tanks/:tankId/update', {
 			controller: 'TankFormController',
 			templateUrl: '/js/modules/tanks/views/update.html',
-		});
+		})
+
+		//Trends view
+		.when('/trends', {
+			controller: 'TrendsController',
+			templateUrl: '/js/modules/trends/views/tends.html',	
+		})
+		
 
 	//Use HTML5 URLs instead of hash prefixes
 	$locationProvider.html5Mode(true);
