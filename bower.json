@@ -9,6 +9,9 @@
 		"angular-route": "latest",		
 		"angular-resource": "latest",
 		"angular-bootstrap": "latest",
-		"ng-table": "latest"
+		"ng-table": "latest",
+		"d3": "latest",
+		"nvd3": "latest",
+		"angularjs-nvd3-directives"
 	}
 }
