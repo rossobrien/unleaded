@@ -32,9 +32,12 @@ then
 	npm install
 	bower install --allow-root
 
+	# Seed test data
+	mongoimport --db unleaded --collection tanks --jsonArray --file gas.json
+
 	echo "Install finished! Node server is listening on http://10.0.01.100:8080/"
 
 	# Run it
-	sudo sh start
+	node server.js
 
 fi
