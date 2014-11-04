@@ -13,9 +13,10 @@
 
 	<table ng-table="tableParams" template-pagination="custom/pager" show-filter="true" class="table">
 		<tr ng-repeat="tank in $data">
-			<a href="/tanks/{{tank._id}}">
 				<td data-title="'Date'" sortable="'date'" filter="{ 'date': 'text' }">
-					 {{ tank.date | date:dateFormat }}
+					<a href="/tanks/{{tank._id}}">
+						{{ tank.date | date:dateFormat }}
+					</a>
 				</td>
 				<td data-title="'Station'" sortable="'station'" filter="{ 'station': 'text' }">
 					{{ tank.station }}
@@ -32,7 +33,6 @@
 				<td data-title="'MPG'" sortable="'mpg'" filter="{ 'mpg': 'text' }">
 					{{ tank.mpg | number:2 }}
 				</td>
-			</a>
 		</tr>
 	</table>
 	<script type="text/ng-template" id="custom/pager">
