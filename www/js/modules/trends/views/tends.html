@@ -7,5 +7,18 @@
 </div>
 
 <div class="container">
-
+	<h1>
+		Miles per Gallon
+	</h1>
+	<nvd3-line-chart
+		data="chartData"
+		height="600"
+        margin="{left:80,top:50,bottom:50,right:10}"
+		showYAxis="true"
+		showXAxis="true"
+		forcey="[20, 35]"
+		interpolate="basis"
+		yAxisLabel="Miles Per Gallon"
+		xAxisLabel="Fill-up Number">
+	</nvd3-line-chart>
 </div>
