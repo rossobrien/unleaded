@@ -1,10 +1,9 @@
 body {
-	padding-top: 125px;
 	padding-bottom: 20px;
 }
 
-.navbar-fixed-top {
-	background-color: rgba(0,0,0,.75);
+.navbar-static-top {
+	background-color: rgba(0,0,0,.5);
 	border-bottom: 0px;
 	padding-top: 25px;
 	padding-bottom: 25px;
