@@ -16,6 +16,6 @@ node_modules
 
 www/libs
 
-config/db.js
+app/config/db.js
 
 .vagrant

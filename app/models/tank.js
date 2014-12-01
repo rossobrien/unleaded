@@ -3,8 +3,8 @@
  *
  * Model file for Tank objects
  */
-var mongoose = require('mongoose');
-var Schema   = mongoose.Schema;
+var mongoose = require('mongoose'),
+	Schema   = mongoose.Schema;
 
 //Data structure for Tanks
 var TankSchema   = new Schema({

@@ -31,13 +31,14 @@ then
 	cd /var/www/$1
 	npm install
 	bower install --allow-root
+	sudo npm install -g nodemon
 
 	# Seed test data
 	mongoimport --db unleaded --collection tanks --jsonArray --file gas.json
 
-	echo "Install finished! Node server is listening on http://10.0.01.100:8080/"
+	echo "Install finished!"
 
 	# Run it
-	node server.js
+	#node server.js
 
 fi

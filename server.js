@@ -5,10 +5,13 @@
  */
 
 // Import modules 
-var express    = require('express');
-var app        = express();
-var mongoose   = require('mongoose');
-var bodyParser = require('body-parser');
+var express      = require('express');
+var app          = express();
+var mongoose     = require('mongoose'),
+	bodyParser   = require('body-parser'),
+	cookieParser = require('cookie-parser'),
+	session      = require('express-session')
+	passport     = require('passport');
 
 /**
  * Backend config
@@ -18,8 +21,19 @@ var bodyParser = require('body-parser');
 var port = process.env.PORT || 8080;
 
 // DB config
-var db = require('./config/db');
+var db = require('./app/config/db');
 mongoose.connect(db.url);
+
+// Configure Passport for authentication
+require('./app/config/passport')(passport);
+app.use(cookieParser());
+app.use(session({ 
+	secret: 'unl3aded app', 
+	resave: false, 
+	saveUninitialized: false 
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 /**
  * API config
