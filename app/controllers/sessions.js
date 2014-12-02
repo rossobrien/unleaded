@@ -2,7 +2,7 @@ var mongoose = require('mongoose'),
 	passport = require('passport');
 
 /**
- * Session
+ * Get session info
  * 
  * @return User info
  */
@@ -12,6 +12,8 @@ exports.session = function (req, res) {
 
 /**
  * Logout
+ *
+ * Destroys the session
  */
 exports.logout = function (req, res) {
 	if(req.user) 
@@ -27,9 +29,11 @@ exports.logout = function (req, res) {
 
 /**
  *  Login
+ *
+ *  Creates a new session
  */
 exports.login = function (req, res, next) {
-	passport.authenticate('local-login', function(err, user, info) {
+	passport.authenticate('local', function(err, user, info) {
 		var error = err || info;
 		if (error) 
 		{ 
